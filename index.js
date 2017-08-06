@@ -24,6 +24,7 @@ connection.connect(function(err){
     prompt(personality).then(function(answer){
       switch (answer.user) {
         case 'Customer':
+        bamCustomer.getAllProducts()
           break;
         case 'Manager':
           break;
